@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link href="css/estilos.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<title> Usados | Tester </title>
+</head>
+<body>
+<header id="header-usados-tester">
+    <nav>
+        <div class="menu-btn" id="menu-btn-header">
+            <div class="menu-btn__burger"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="iphone_nuevos.html">iPhone Nuevos</a></li>
+            <li><a href="usados_tester.html">Usados | Tester</a></li>
+            <li><a href="macbook_imac.html">MacBook | iMac</a></li>
+            <li><a href="ipad.html">iPad</a></li>
+            <li><a href="airpods.html">AirPods</a></li>
+            <li><a href="apple_watch.html">Apple Watch</a></li>
+        </ul>
+            <h2>Usados | Tester</h2>
+     </nav>
+
+ </header>
+    
+<main>
+<div class="contenedor">
+    <ul class="columna">
+        <li>
+            <div class="img-container">
+                <img src="imagenes/usados_tester1.png" alt="Usados | Tester 1">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/usados_tester2.png" alt="Usados | Tester 2">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/usados_tester3.png" alt="Usados | Tester 3">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/usados_tester4.png" alt="Usados | Tester 4">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/usados_tester5.png" alt="Usados | Tester 5">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/usados_tester6.png" alt="Usados | Tester 6">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/usados_tester7.png" alt="Usados | Tester 7">
+            </div>
+        </li>
+    </ul>
+</div>    
+</main>
+<div class="whatsapp-btn">
+    <a href="https://api.whatsapp.com/send?phone=5492213556203" target="_blank">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp">
+    </a>
+</div>
+<footer>
+    <nav>
+        <ul class="footer-menu">
+            <li><a href="#" onclick="toggleMenu()">Menú</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#formulario-busqueda">Buscar</a></li>
+            <li><a href="#">Mi cuenta</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2024 Baloo Store. Todos los derechos reservados.</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+    
+        menuBtn.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    });
+
+    function toggleMenu() {
+        const menuBtn = document.getElementById('menu-btn-header');
+        const menu = document.querySelector('.menu');
+    
+        menu.classList.toggle('active');
+    }
+</script> 
+</body>
+</html>

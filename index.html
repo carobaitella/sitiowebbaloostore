@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link href="css/estilos.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<title> Baloo Store </title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="menu-btn" id="menu-btn-header">
+            <div class="menu-btn__burger"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="iphone_nuevos.html">iPhone Nuevos</a></li>
+            <li><a href="usados_tester.html">Usados | Tester</a></li>
+            <li><a href="macbook_imac.html">MacBook | iMac</a></li>
+            <li><a href="ipad.html">iPad</a></li>
+            <li><a href="airpods.html">AirPods</a></li>
+            <li><a href="apple_watch.html">Apple Watch</a></li>
+        </ul>
+     </nav>
+    <div id="logo">
+        <img src="imagenes/logo_baloo.png" alt="Logo Baloo">
+        <h1>Baloo Store</h1>
+    </div>
+ </header>
+    
+ <div class="contenedor">
+    <ul class="columna">
+        <li>
+            <div class="img-container"></div>
+                <img src="imagenes/iphone_nuevos.png" alt="iPhone Nuevos">
+                <a href="iphone_nuevos.html">iPhone Nuevos</a>
+        </li>
+        <li>
+            <img src="imagenes/iphone_usados_tester.png" alt="Usados | Tester">
+            <a href="usados_tester.html">Usados | Tester</a>
+        </li>
+        <li>
+            <img src="imagenes/macbook_imac.png" alt="MacBook | iMac">
+            <a href="macbook_imac.html">MacBook | iMac</a>
+        </li>
+        <li>
+            <img src="imagenes/ipad.png" alt="iPad">
+            <a href="ipad.html">iPad</a>
+        </li>
+        <li>
+            <img src="imagenes/airpods.png" alt="AirPods">
+            <a href="airpods.html">AirPods</a>
+        </li>
+        <li>
+            <img src="imagenes/apple_watch.png" alt="Apple Watch">
+            <a href="apple_watch.html">Apple Watch</a>
+        </li>
+    </ul>
+</div>
+
+<div class="contenedor-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_EYoV1kZWk" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="whatsapp-btn">
+    <a href="https://api.whatsapp.com/send?phone=5492213556203" target="_blank">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp">
+    </a>
+</div>
+<section id="testimonios-de-clientes">
+    <h2>Testimonios de clientes</h2>
+    <div class="testimonios-container">
+        <img src="imagenes/testimonios_1.png" alt="Testimonio 1">
+        <img src="imagenes/testimonios_2.png" alt="Testimonio 2">
+        <img src="imagenes/testimonios_3.png" alt="Testimonio 3">
+        <img src="imagenes/testimonios_4.png" alt="Testimonio 4">
+    </div>
+</section>
+<footer>
+    <nav>
+        <ul class="footer-menu">
+            <li><button class="btn-blancos"><a href="#" onclick="toggleMenu()">Menú</a></button></li>
+            <li><button class="btn-blancos"><a href="#">Favoritos</a></button></li>
+            <li><button class="btn-blancos"><a href="#formulario-busqueda">Buscar</a></button></li>
+            <li><button class="btn-blancos"><a href="#">Mi cuenta</a></button></li>
+        </ul>
+    </nav> 
+    <p>&copy; 2024 Baloo Store. Todos los derechos reservados.</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+    
+        menuBtn.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    });
+
+    function toggleMenu() {
+        const menuBtn = document.getElementById('menu-btn-header');
+        const menu = document.querySelector('.menu');
+    
+        menu.classList.toggle('active');
+    }
+</script> 
+</body>
+</html> 

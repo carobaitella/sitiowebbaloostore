@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<link href="css/estilos.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<title> Apple Watch </title>
+</head>
+<body>
+<header id="header-usados-tester">
+    <nav>
+        <div class="menu-btn" id="menu-btn-header">
+            <div class="menu-btn__burger"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="iphone_nuevos.html">iPhone Nuevos</a></li>
+            <li><a href="usados_tester.html">Usados | Tester</a></li>
+            <li><a href="macbook_imac.html">MacBook | iMac</a></li>
+            <li><a href="ipad.html">iPad</a></li>
+            <li><a href="airpods.html">AirPods</a></li>
+            <li><a href="apple_watch.html">Apple Watch</a></li>
+        </ul>
+            <h2>Apple Watch</h2>
+     </nav>
+
+ </header>
+    
+<main>
+<div class="contenedor">
+    <ul class="columna">
+        <li>
+            <div class="img-container">
+                <img src="imagenes/apple-watch-se-2022.png" alt="Apple Watch SE 2022">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/apple-watch-serie-8.png" alt="Apple Watch Serie 8">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/apple-watch-serie-9.png" alt="Apple Watch Serie 9">
+            </div>
+        </li>
+        <li>
+            <div class="img-container">
+                <img src="imagenes/apple-watch-ultra-1.png" alt="Apple Watch Ultra 1">
+            </div>
+    </ul>
+</div>    
+</main>
+<div class="whatsapp-btn">
+    <a href="https://api.whatsapp.com/send?phone=5492213556203" target="_blank">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp">
+    </a>
+</div>
+<footer>
+    <nav>
+        <ul class="footer-menu">
+            <li><a href="#" onclick="toggleMenu()">Menú</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#formulario-busqueda">Buscar</a></li>
+            <li><a href="#">Mi cuenta</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2024 Baloo Store. Todos los derechos reservados.</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+    
+        menuBtn.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    });
+
+    function toggleMenu() {
+        const menuBtn = document.getElementById('menu-btn-header');
+        const menu = document.querySelector('.menu');
+    
+        menu.classList.toggle('active');
+    }
+</script> 
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* Estilos para la página web de Baloo Store */
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primario);
+}
+
+.menu-btn {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.menu-btn__burger {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.menu-btn__burger a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.menu.active {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo {
+    flex: 1;
+    text-align: center;
+}
+
+#logo img {
+    height: auto;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    order: -1;
+}
+
+.decorative-image img {
+    height: auto;
+}
+
+#formulario-busqueda {
+    flex: 1;
+    text-align: center;
+}
+
+.contenedor img {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#nosotros {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+:root {
+    --color-primario: #AEE1D7;
+    --color-secundario: #ffffff;
+    --color-fondo: #000000;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 0 20px;
+}
+
+#index.html
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columna {
+    flex: 0 0 calc(50% - 20px); 
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0;
+    width: 70%;
+}
+
+/* Estilos para las imágenes */
+.columna img {
+    height: auto;
+}
+
+/* Estilos para los enlaces */
+.columna a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.columna li {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.columna a {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3px 2px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#testimonios-de-clientes {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#testimonios-de-clientes .testimonios-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+#testimonios-de-clientes .testimonios-container img {
+    height: auto;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+}
+
+.whatsapp-btn img {
+    width: 80px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+}
+
+.footer-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.footer-menu li {
+    margin-right: 20px;
+}
+
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para el footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+}
+
+/* Estilos para los botones blancos */
+.btn-blancos {
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#header-usados-tester {
+    background-image: url("../imagenes/imagen_decorativa.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Ocultar el menú principal y mostrar el menú de hamburguesa */
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    /* Ajustes en el tamaño del logo */
+    #logo img {
+        width: 100px;
+    }
+
+    /* Ajustes en el tamaño del botón de WhatsApp */
+    .whatsapp-btn {
+        bottom: 100px;
+    }
+
+    /* Cambios en las columnas */
+    .columna {
+        flex: 0 0 100%; 
+        width: 100%;
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Ajustes en el tamaño del logo */
+    #logo img {
+        width: 150px;
+    }
+
+    /* Ajustes en el tamaño del botón de WhatsApp */
+    .whatsapp-btn {
+        bottom: 120px;
+    }
+
+    /* Cambios en las columnas */
+    .columna {
+        width: 50%;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media only screen and (min-width: 1025px) {
+    /* Ajustes en el tamaño del logo */
+    #logo img {
+        width: 200px;
+    }
+
+    /* Ajustes en el tamaño del botón de WhatsApp */
+    .whatsapp-btn {
+        bottom: 150px;
+    }
+
+    /* Cambios en las columnas */
+    .columna {
+        width: 25%;
+    }
+}
